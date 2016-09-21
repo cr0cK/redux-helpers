@@ -1,0 +1,20 @@
+// @flow
+
+/**
+ * Reducers helpers
+ */
+
+declare function replace<V>(collection: Array<V>, predicate: Function, value:V): Array<V>;
+declare function insertBefore<V>(collection: Array<V>, predicate: Function, value:V): Array<V>;
+declare function insertAfter<V>(collection: Array<V>, predicate: Function, value:V): Array<V>;
+declare function push<V>(collection: Array<V>, value: V): Array<V>;
+declare function unshift<V>(collection: Array<V>, value:V): Array<V>;
+
+
+export {
+  replace
+  insertBefore
+  insertAfter
+  push
+  unshift
+};
